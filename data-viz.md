@@ -8,7 +8,7 @@ This endpoint provides all of the data available for the project. Each row of da
 
 `https://api.webhookrelay.io/show?user-id=1&prov=aol`
 
-This endpoint will allow for query parameters to be entered that inlude our development `user-id=1` and the provider string `prov=aol`. Querying the endpoint provided as shown above will return all of the data for the AOL email provider. For development purposes, we will only be using the `user-id=1` but the `user-id` and the `prov=""` should be dynamic for a production usecase.  
+This endpoint will allow for query parameters to be entered that include our development `user-id=1` and the provider string `prov=aol`. Querying the endpoint provided as shown above will return all of the data for the AOL email provider. For development purposes, we will only be using the `user-id=1` but the `user-id` and the `prov=""` should be dynamic for a production usecase.  
 
 The list of providers in the sample data set: 
 
@@ -23,4 +23,18 @@ Here is an example of a visualization I created years ago using Ruby on Rails an
 ![Example](https://camo.githubusercontent.com/8b305889af926a5ae55c219716e0fb65f3bbcc5d/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f73672d73746174732d6173736574732f53696d706c794d61696c5374617469737469637350726f7669646572732e706e67)
 
 
-The final product should include a web server/service that is routable and listening on port 8080. The controller should be able to accept a User ID, make a database call, retreive the data for that user, then display it in a usable, functional and appealing manner. This service will need to be containerized and run on a Kubernetes cluster deployed to AWS. 
+The final product should include a web server/service that is routable and listening on port 8080. The controller should be able to accept a User ID, make a database call, retreive the data for that user, then display it in a usable, functional and appealing manner. This service will need to be containerized so please use a few outside dependancies as possible. Outside charting libraries are acceptable. 
+
+User Stories -
+
+- When a user visits the dashboard they should see a list of the email providers pulled from the query using the user-id (in this case `1`)
+
+- A user should be able to select one or more providers and a graph of each provider's data should appear in the body of the website
+
+- Provider data should be searchable and filterable. A user should be able to scale the timeseries data for the graphs and filter event types. The graphs should be dynamic when this is done (Most major graphing libraries do this for us)
+
+- A user should be able to add and remove providers from the webpage body. 
+
+- The design of the dashboard should be pleasant but doesn't need to be perfect. This dashboard will be specific to SendGrid so we can use [SendGrid's style guide as a reference.](https://styleguide.sendgrid.com/index.html)
+
+- Please use a common programming language(s) to fulfill these requirements (PHP, Python, Ruby). If you are unsure please ask. 
