@@ -16,7 +16,7 @@ The list of providers in the sample data set:
 AOL, AT&T ("AT\u0026T"), BigPond, Charter, Comcast, Cox, Dream Host, EarthLink, Facebook, GMX, Gmail, GoDaddy, Hotmail, Libero, Mail.Ru, MessageLabs, Microsoft Forefront, Microsoft Hosted Exchange, Microsoft Outlook Live, Optus, Orange, Other, Postini, Prodigy, Rackspace, RoadRunner, Shaw, US Government, US Military, University, Verizon, WEB.DE, Yahoo, Yandex, ZohoMail, free.fr, iCloud
 ```
 
-This is a non-exhaustive list of providers. Our data visualization engine should be able to account for providers that are not included in our sample data and will need to query the database on a per user basis. Keep these variables in mind while developing the visualization dashboard. 
+Our data visualization engine will need to query the database on a per user basis. Keep these variables in mind while developing the visualization dashboard. 
 
 Here is an example of a visualization I created years ago using Ruby on Rails and HighCharts. On the left hand side there is a list of the providers. When a provider or group of providers are selected, the graphs populate in the body of the page with each providers data displayed as a line chart. The data can be filtered by `event type` using the key on the right side of the chart. The time series charts are also dynamic using the slider at the bottom. The time range can be adjusted and HighCharts does the work of scaling the graph for us. 
 
