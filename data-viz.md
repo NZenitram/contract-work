@@ -37,4 +37,4 @@ Requirements -
 
 - The design of the dashboard should be pleasant but doesn't need to be perfect. This dashboard will be specific to SendGrid so we can use [SendGrid's style guide as a reference.](https://styleguide.sendgrid.com/index.html)
 
-- Please use a common programming language(s) to fulfill these requirements (PHP, Python, Ruby). If you are unsure please ask. 
+- Please use a common programming language(s) to fulfill these requirements (PHP, Python, Ruby, Javascript). If you are unsure please ask. 
