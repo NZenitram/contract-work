@@ -25,7 +25,7 @@ Here is an example of a visualization I created years ago using Ruby on Rails an
 
 The final product should include a web server/service that is routable and listening on port 8080. The controller should be able to accept a User ID, make a database call, retreive the data for that user, then display it in a usable, functional and appealing manner. This service will need to be containerized so please use a few outside dependancies as possible. Outside charting libraries are acceptable. 
 
-User Stories -
+Requirements - 
 
 - When a user visits the dashboard they should see a list of the email providers pulled from the query using the user-id (in this case `1`)
 
