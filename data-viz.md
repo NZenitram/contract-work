@@ -23,7 +23,7 @@ Here is an example of a visualization I created years ago using Ruby on Rails an
 ![Example](https://camo.githubusercontent.com/8b305889af926a5ae55c219716e0fb65f3bbcc5d/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f73672d73746174732d6173736574732f53696d706c794d61696c5374617469737469637350726f7669646572732e706e67)
 
 
-The final product should include a web server/service that is routable and listening on port 8080. The controller should be able to accept a User ID, make a database call, retreive the data for that user, then display it in a usable, functional and appealing manner. This service will need to be containerized so please use a few outside dependancies as possible. Outside charting libraries are acceptable. 
+The final product should include a web server/service that is routable and listening on port 8080. The controller should be able to accept a User ID, make a database call, retreive the data for that user, then display it in a usable, functional and appealing manner. This service will need to be containerized so please use as few outside dependancies as possible. Outside charting libraries are acceptable. 
 
 Requirements - 
 
